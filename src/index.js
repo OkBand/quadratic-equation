@@ -9,5 +9,7 @@ module.exports = function solveEquation(equation) {
   var x1 = (-b + dr) / 2 * a;
   var x2 = (-b - dr) / 2 * a;
 
-  return solutions [x1, x2];
+  const solutions = [x1, x2];
+
+  return solutions;
 }
