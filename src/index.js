@@ -1,5 +1,5 @@
 module.exports = function solveEquation(equation) {
-  var reg = equation.match(/\d/g);
+  var reg = equation.match(/-?\d+/g);
   var a = reg[1];
   var b = reg[3];
   var c = reg[4];
