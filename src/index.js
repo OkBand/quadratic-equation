@@ -1,8 +1,8 @@
 module.exports = function solveEquation(equation) {
   var reg = equation.match(/-?\d+/g);
-  var a = reg[1];
-  var b = reg[3];
-  var c = reg[4];
+  var a = reg[0];
+  var b = reg[2];
+  var c = reg[3];
   var d = Math.pow(b, 2) - 4 * a * c;
 
   var dr = Math.sqrt(d);
