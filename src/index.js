@@ -13,10 +13,10 @@ module.exports = function solveEquation(equation) {
   var solutions;
 
   if (x1 > x2) {
-    solutions = [x1, x2];
+    solutions = [x2, x1];
   }
   else {
-    solutions = [x2, x1];
+    solutions = [x1, x2];
   };
 
   return solutions;
