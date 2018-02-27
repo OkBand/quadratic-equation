@@ -7,10 +7,15 @@ module.exports = function solveEquation(equation) {
   var d = Math.pow(b, 2) - 4 * a * c;
 
   var dr = Math.sqrt(d);
-  var x1 = (-b + dr) / (2 * a);
-  var x2 = (-b - dr) / (2 * a);
+  var x1 = Math.floor((-b + dr) / (2 * a));
+  var x2 = Math.floor((-b - dr) / (2 * a));
 
-  const solutions = [x1, x2];
+  if (x1 > x2) {
+    const solutions = [x1, x2];
+  }
+  else {
+    const solutions = [x2, x1];
+  };
 
   return solutions;
 }
