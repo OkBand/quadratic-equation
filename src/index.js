@@ -10,11 +10,13 @@ module.exports = function solveEquation(equation) {
   var x1 = Math.floor((-b + dr) / (2 * a));
   var x2 = Math.floor((-b - dr) / (2 * a));
 
+  var solutions;
+
   if (x1 > x2) {
-    const solutions = [x1, x2];
+    solutions = [x1, x2];
   }
   else {
-    const solutions = [x2, x1];
+    solutions = [x2, x1];
   };
 
   return solutions;
