@@ -7,8 +7,8 @@ module.exports = function solveEquation(equation) {
   var d = Math.pow(b, 2) - 4 * a * c;
 
   var dr = Math.sqrt(d);
-  var x1 = Math.floor((-b + dr) / (2 * a));
-  var x2 = Math.floor((-b - dr) / (2 * a));
+  var x1 = Math.ceil((-b + dr) / (2 * a));
+  var x2 = Math.ceil((-b - dr) / (2 * a));
 
   var solutions;
 
